@@ -1,0 +1,267 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+
+.header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+
+.navbar a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #555;
+}
+
+.icons img {
+    width: 30px;
+    cursor: pointer;
+    transition: transform 0.3s;
+    margin-left: 20px;
+}
+
+.icons img:hover {
+    transform: scale(1.1);
+}
+
+
+.banner {
+    background-image: url('banner.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 70px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner .logo img {
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+}
+
+.banner-content h1 {
+    font-size: 3rem;
+    margin: 10px 0;
+}
+
+.banner-content p {
+    font-size: 1.2rem;
+}
+
+
+.cart-page {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+.cart-content {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+}
+
+.cart-items table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1rem;
+}
+
+.cart-items td {
+    padding: 15px;
+    text-align: center;
+    color: rgb(148, 138, 113);
+}
+
+.cart-items th {
+    padding: 15px;
+    text-align: center;
+    background-color: #f5e7d6;
+}
+
+
+.cart-totals {
+    background-color: #f5e7d6;
+    padding: 60px;
+    border-radius: 15px;
+    text-align: center;
+    flex: 1;
+    margin-top: 20px;
+}
+
+.cart-totals h2 {
+    font-size: 1.5rem;
+}
+
+#checkout-btn {
+    padding: 15px 25px;
+    background-color: #ffffff;
+    color: #0e0a0a;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+#checkout-btn:hover {
+    background-color: #555;
+}
+
+
+.footer {
+    background-color: #f5e7d6;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.feature {
+    text-align: center;
+    flex: 1;
+}
+
+.feature img {
+    width: 60px;
+    margin-bottom: 10px;
+}
+
+.feature h3 {
+    margin: 5px 0;
+    font-size: 1.2rem;
+}
+
+
+.delete-icon {
+    width: 30px;
+    cursor: pointer;
+    transition: transform 0.3s, opacity 0.3s;
+}
+.delete-icon:hover {
+    transform: scale(1.2);
+    opacity: 0.7;
+}
+
+
+.cart-items td:first-child {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cart-items .quantity-input {
+    width: 60px;
+    padding: 5px;
+    text-align: center;
+}
+
+
+@media (max-width: 768px) {
+    .cart-content {
+        flex-direction: column; 
+    }
+
+    .cart-items table {
+        width: 100%;
+    }
+
+    .cart-items td, .cart-items th {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    .cart-totals {
+        padding: 30px;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .footer {
+        padding: 30px 10px;
+    }
+
+    .features {
+        display: block;
+    }
+
+    .feature {
+        margin-bottom: 20px;
+    }
+
+    
+    .logo img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar a {
+        margin: 10px 0;
+    }
+
+    .icons img {
+        margin-left: 10px;
+    }
+
+    .cart-totals {
+        padding: 20px;
+    }
+
+    #checkout-btn {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <img src="removed-background.png" alt="logo">
+        <h3>Marmeto</h3>
+      </div>
+      <nav class="navbar">
+        <a href="#">Home</a>
+        <a href="#">Shop</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </nav>
+      <div class="icons">
+        <img src="icons8-search-50.png" alt="search" class="icon">
+        <img src="icons8-heart-50.png" alt="heart" class="icon">
+        <img src="icons8-cart-50.png" alt="cart" class="icon">
+      </div>
+    </div>
+  </header>
+
+  <!-- Banner -->
+  <section class="banner">
+    <div class="banner-content">
+      <div class="logo">
+        <img src="removed-background.png" alt="logo">
+      </div>
+      <h1 style="color: rgb(35, 33, 33);">Cart</h1>
+      <p style="color: rgb(84, 79, 79);">Home > Cart</p>
+    </div>
+  </section>
+
+  <!-- Cart Section -->
+  <main class="cart-page">
+    <div class="cart-content">
+      <!-- Cart Items -->
+      <div class="cart-items">
+        <table>
+          <thead>
+            <tr>
+              <th>Product</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>Subtotal</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="cart-items">
+            
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Cart Totals -->
+      <div class="cart-totals">
+        <h2>Cart Totals</h2>
+        <p><strong>Subtotal:</strong> <span id="subtotal" style="color: rgb(148, 138, 113);">₹0.00</span></p>
+        <p><strong>Total:</strong> <span id="total" style="color: rgb(101, 104, 4);">₹0.00</span></p>
+        <button id="checkout-btn">Check Out</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="features">
+      <div class="feature">
+        <img src="icons8-trophy-100.png" alt="High Quality">
+        <h3>High Quality</h3>
+        <h3 style="font-weight: normal;">Crafted from top materials</h3>
+      </div>
+      <div class="feature">
+        <img src="icons8-warranty-100.png" alt="Warranty Protection">
+        <h3>Warranty Protection</h3>
+        <h3 style="font-weight: normal;">Over 2 years</h3>
+      </div>
+      <div class="feature">
+        <img src="icons8-hand-box-64.png" alt="Free Shipping">
+        <h3>Free Shipping</h3>
+        <h3 style="font-weight: normal;">Order over $150</h3>
+      </div>
+      <div class="feature">
+        <img src="icons8-customer-support-50.png" alt="24/7 Support">
+        <h3>24/7 Support</h3>
+        <h3 style="font-weight: normal;">Dedicated support</h3>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
